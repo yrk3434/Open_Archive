@@ -24,8 +24,9 @@ data.printSchema() # 컬럼 타입(string, double 등) 확인
 data.select('column1') # 특정 열의 데이터 추출 -> 확인하려면 data.select('column1').show()
 ```
 
-- 기존 행을 이용해 새로운 행 만들기 (R의 mutate와 유사)
-
+- groupBy 연산
+- R의 group_by(col)%>%summarise(...) 연산과 비슷
 ```
-data.selct(
+ dutchpay.groupBy("category_col").count().show() # 카테고리 별 개수 세기
+ dutchpay.groupBy("category_col").sum('amount').show() # 카테고리 별 amount 컬럼의 값의 합 구하기
 ```
