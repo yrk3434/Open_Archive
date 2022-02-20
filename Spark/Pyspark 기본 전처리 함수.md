@@ -1,3 +1,6 @@
+- anaconda prompt에서 pyspark 치고 다음 명령 실행해도 되고 주피터 노트북에서 pyspark 라이브러리 임포트해서 사용해도 됨
+
+
 R의 dplyr 사용법과 매우 유사함
 
 - 데이터 생성
